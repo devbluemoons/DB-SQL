@@ -1,2 +1,2 @@
-# DB--SQL
+# DB-SQL
 self-study DB / SQL
