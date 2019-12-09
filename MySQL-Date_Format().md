@@ -4,7 +4,7 @@
   
 ###### 사용법  
 ```sql
-date_format(target-date, format)
+date_format(target-date, format) -- sample
 ``` 
 아래와 같은 포맷팅을 경우 `시:분:초`가 정확히 포맷팅되지 않는 경우가 있다  
 ```sql
