@@ -8,6 +8,16 @@ SELECT COUNT(*) AS warning01
   FROM LOG_ALARM
  WHERE ETIME > CURRENT_DATE()
 ```
+###### using count with if
+```sql
+SELECT COUNT(*) AS warning01
+     , COUNT(IF(GRADE = 2, GRADE, NULL)) AS warning02
+     , COUNT(IF(GRADE = 3, GRADE, NULL)) AS warning03
+     , COUNT(IF(GRADE = 4, GRADE, NULL)) AS warning04
+     , COUNT(IF(GRADE = 5, GRADE, NULL)) AS warning05
+  FROM LOG_ALARM
+ WHERE ETIME > CURRENT_DATE()
+```
 
 ###### using count and sum
 ```sql
