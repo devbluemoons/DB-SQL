@@ -9,7 +9,7 @@ SELECT COUNT(*) AS warning01
  WHERE ETIME > CURRENT_DATE()
 ```
 
-###### using count with sum
+###### using count and sum
 ```sql
 SELECT COUNT(*) AS warning01
      , SUM(GRADE=2) AS warning02
