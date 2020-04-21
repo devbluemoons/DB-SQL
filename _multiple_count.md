@@ -1,4 +1,4 @@
-###### using count with case when
+###### using `COUNT()` with `CASE WHEN`
 ```sql
 SELECT COUNT(*) AS warning01
      , COUNT(CASE WHEN GRADE = 2 THEN 1 END) AS warning02
@@ -8,7 +8,7 @@ SELECT COUNT(*) AS warning01
   FROM LOG_ALARM
  WHERE ETIME > CURRENT_DATE()
 ```
-###### using count with if
+###### using `COUNT(`) with `IF`
 ```sql
 SELECT COUNT(*) AS warning01
      , COUNT(IF(GRADE = 2, GRADE, NULL)) AS warning02
@@ -19,7 +19,7 @@ SELECT COUNT(*) AS warning01
  WHERE ETIME > CURRENT_DATE()
 ```
 
-###### using count and sum
+###### using `COUNT()` and `SUM()`
 ```sql
 SELECT COUNT(*) AS warning01
      , SUM(GRADE=2) AS warning02
